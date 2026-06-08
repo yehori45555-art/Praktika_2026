@@ -8,7 +8,7 @@
     8             if students[j][1] > students[max_index][1]:
     9                 max_index = j
    10 
-   11         students[i], students[max_index] = students[max_index], students[i      ]
+   11         students[i], students[max_index] = students[max_index], students[i]
    12     return students
    13 
    14 
@@ -19,3 +19,9 @@
    19     ("Артем", 50),
    20     ("Софія", 88)
    21 ]
+   22 
+   23 raiting = create_raiting(students)
+   24 print("Рейтинг студентів:")
+   25 for student in raiting:
+   26     print(student[0], "-", student[1])
+~                                                
