@@ -37,7 +37,7 @@ class PhoneBook:
 
 
 book = PhoneBook()
-book.add_contact("Іван", "0971111111")
+book.add_contact("Іван", "0973232322")
 book.add_contact("Олег", "0662222222")
 
 print(book.get_contact("Іван"))
