@@ -20,7 +20,7 @@ def climb_iterative(n: int) -> int:
 
     return b
 
-values = [10, 20, 30, 35]
+values = [10, 20, 30, 40]
 
 for n in values:
     start = time.time()
