@@ -1,27 +1,27 @@
-    1 def create_raiting(students: list) -> list:
-    2     n = len(students)
-    3 
-    4     for i in range(n):
-    5         max_index = 1
-    6  
-    7         for j in range(i + 1, n):
-    8             if students[j][1] > students[max_index][1]:
-    9                 max_index = j
-   10 
-   11         students[i], students[max_index] = students[max_index], students[i]
-   12     return students
-   13 
-   14 
-   15 students = [
-   16     ("Іван", 85),
-   17     ("Дамір", 100),
-   18     ("Олександр", 78),
-   19     ("Артем", 50),
-   20     ("Софія", 88)
-   21 ]
-   22 
-   23 raiting = create_raiting(students)
-   24 print("Рейтинг студентів:")
-   25 for student in raiting:
-   26     print(student[0], "-", student[1])
-~                                                
+def create_raiting(students: list) -> list:
+        n = len(students)
+     
+         for i in range(n):
+             max_index = 1
+      
+             for j in range(i + 1, n):
+                 if students[j][1] > students[max_index][1]:
+                     max_index = j
+   
+            students[i], students[max_index] = students[max_index], students[i]
+        return students
+    
+    
+    students = [
+        ("Іван", 85),
+        ("Дамір", 100),
+        ("Олександр", 78),
+        ("Артем", 50),
+        ("Софія", 88)
+    ]
+    
+    raiting = create_raiting(students)
+    print("Рейтинг студентів:")
+    for student in raiting:
+        print(student[0], "-", student[1])
+                                            
