@@ -3,7 +3,7 @@
     3 
     4     for i in range(n):
     5         max_index = 1
-    6 
+    6  
     7         for j in range(i + 1, n):
     8             if students[j][1] > students[max_index][1]:
     9                 max_index = j
